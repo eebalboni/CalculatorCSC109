@@ -16,7 +16,11 @@ public class Calculator {
         } else if (option.equals("subtract")){
             System.out.println("The difference of the two numbers is: " + (numOne - numTwo));
         }else if(option.equals("divide")){
-            System.out.println("The quotient of the two numbers is: " + (numOne / numTwo));
+            if(numTwo == 0){
+                System.out.println("Error: Divide by Zero");
+            }else {
+                System.out.println("The quotient of the two numbers is: " + (numOne / numTwo));
+            }
         }else if(option.equals("multiply")){
             System.out.println("The product of the two numbers is: " + (numOne * numTwo));
         }else{
