@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter an integer: ");
-        int numOne = sc.nextInt();
-        System.out.println("Please enter a second integer: ");
-        int numTwo = sc.nextInt();
+        System.out.println("Please enter a number: ");
+        float numOne = sc.nextFloat();
+        System.out.println("Please enter a second number: ");
+        float numTwo = sc.nextFloat();
         System.out.println("Would you like to add, subtract, divide or multiply?");
         String option = sc.next();
 
