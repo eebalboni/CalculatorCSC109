@@ -7,7 +7,19 @@ public class Calculator {
         int numOne = sc.nextInt();
         System.out.println("Please enter a second integer: ");
         int numTwo = sc.nextInt();
-        System.out.println("The sum of the two numbers is: " + (numOne + numTwo));
+        System.out.println("Would you like to add or subtract?");
+        String option = sc.next();
+
+        //asking user what they want to do
+        if(option.equals("add")){
+            System.out.println("The sum of the two numbers is: " + (numOne + numTwo));
+        } else if (option.equals("subtract")){
+            System.out.println("The difference of the two numbers is: " + (numOne - numTwo));
+        }else{
+            System.out.println("Invalid input");
+        }
+
+
         
     }
 }
