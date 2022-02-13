@@ -7,7 +7,7 @@ public class Calculator {
         int numOne = sc.nextInt();
         System.out.println("Please enter a second integer: ");
         int numTwo = sc.nextInt();
-        System.out.println("Would you like to add or subtract?");
+        System.out.println("Would you like to add, subtract, divide or multiply?");
         String option = sc.next();
 
         //asking user what they want to do
@@ -15,6 +15,10 @@ public class Calculator {
             System.out.println("The sum of the two numbers is: " + (numOne + numTwo));
         } else if (option.equals("subtract")){
             System.out.println("The difference of the two numbers is: " + (numOne - numTwo));
+        }else if(option.equals("divide")){
+            System.out.println("The quotient of the two numbers is: " + (numOne / numTwo));
+        }else if(option.equals("multiply")){
+            System.out.println("The product of the two numbers is: " + (numOne * numTwo));
         }else{
             System.out.println("Invalid input");
         }
